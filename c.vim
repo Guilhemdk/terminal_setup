@@ -57,9 +57,18 @@ hi link cJCParamVoid            cType
 hi link cJCTypeInDecl           cType
 hi link cJCTypeCast             cType
 
-" NEW: Match structure member access (struct->data)
-syn match cStructAccess "\<\I\i*\->\I\i*\>"  " Match struct->member pattern
+" NEW: Match structure member access (struct->member or struct.member, including nested accesses)
+syn match cStructAccess "\<\I\i*\(\.\|->\)\I\i*\(\(\.\|->\)\I\i*\)*" contained
 hi cStructAccess guifg=#00008B ctermfg=DarkBlue  " DarkBlue for structure access
+
+" NEW: Highlight malloc function calls in a deeper BrightRed
+syn keyword cBrightRedFuncs malloc
+hi cBrightRedFuncs guifg=#FF4060 ctermfg=LightRed  " Slightly darker red for malloc
+
+" NEW: General rule for all uppercase macros
+" Matches identifiers consisting of only uppercase letters and underscores, optionally with numbers
+syn match cMacro /\<[A-Z0-9_]\+\>/
+hi cMacro guifg=#FF4060 ctermfg=LightRed  " BrightRed for general macros
 
 " Uncomment these for debug mode: very visible highlight of what we match
 "hi cJCTypeCast guibg=#ff0000
