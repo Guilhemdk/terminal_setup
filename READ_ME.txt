@@ -1,5 +1,9 @@
 Apres avoir cloné ce dossier, ne pas oublier d'extraire tous les fichiers vers son home directory.
 
+Pour demarrer l'emulateur de terminal tmux, entrez "tmux" dans votre terminal
+!!! Une fois terminé avec votre session, effectuer la commande "tmux kill-server" afin d'eviter tout comportement innatendu
+
+
 .gitignore_global:
 ->ce fichier sert a eviter de push tout fichier idesirable vers son git repo.
 ----> une fois ce fichier cloné, rentrer la commande suivante dans le terminal afin de l'activer:
