@@ -1,7 +1,7 @@
 Apres avoir cloné ce dossier, ne pas oublier d'extraire tous les fichiers vers son home directory.
 
 Pour demarrer l'emulateur de terminal tmux, entrez "tmux" dans votre terminal
-!!! Une fois terminé avec votre session, effectuer la commande "tmux kill-server" afin d'eviter tout comportement innatendu
+!!! Une fois terminé avec votre session, effectuer la commande "tmux kill-server" afin d'eviter tout comportement innatendu lors des prochaines sessions
 
 
 .gitignore_global:
@@ -64,10 +64,10 @@ raccourcis:
 
 c.vim:
 ->ce fichier vient d'un des plugins que vous aurez au prealable installé. Il est la dans le but de faciliter la lecture du code en language C via une surbrillance de differentes types de syntax, libre a vous de l'utiliser ou pas.
--Si vous voulez vous en servir, il faudra le remplacer par le fichier c.vim installé de base. Pour ce faire, il faudra:
-	1)acceder au dossier le contenant qui se trouve (normalement) a cet emplacement: "~/.vim/plugged/c.vim".
+-Si vous voulez vous en servir, il faudra le remplacer par le fichier c.vim installé via le Plug 'pulkomandy/c.vim'. Pour ce faire, il faudra:
+	1)acceder au dossier le contenant qui se trouve (normalement) a dans le dossier: "~/.vim/plugged/c.vim".
 	2) supprimer le fichier "c.vim" actuellement en place a cet empalcement
 	2) bouger le c.vim contenu dans ce dossier a l'emplacement cité precedement.
 -Si vous ne voulez pas vous en servir, vous pouvez tout simplement le supprimer
-
+-Possiblité de modifier les couleurs de syntax en modifiant les "guifg/ctermfg" des commandes "highlight" en fin de fichier
 
