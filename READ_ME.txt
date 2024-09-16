@@ -31,6 +31,8 @@ Pour demarrer l'emulateur de terminal tmux, entrez "tmux" dans votre terminal
 	-alt + k: redimensionner le terminal vers le haut
 	-alt + l: redimensionner le terminal vers la droite
 
+--> Une fois ce fichier telechargé, efectuer la commande "tmux source-file ~/.tmux.conf" afin de mettre en place les raccourcis clavier
+
 !!! Si vous voulez modifier ce fichier(.tmux.conf), ne pas oublier de lancer la commande "tmux source-file ~/.tmux.conf"
 	apres sauvegarde des modifications afin de mettre a jour l'emulateur tmux
 
