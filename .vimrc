@@ -58,6 +58,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 filetype plugin on
 
+nnoremap <leader>r yiw:! git grep -lz <C-r>" -- ':/' \| xargs -0 -r sed -i -e 's/<C-r>"/<C-r>"/g'
+nnoremap gp :<C-r>"
+
 " Set tab width to 4 spaces (using a tab character, not spaces)
 set tabstop=4        " Number of spaces a tab character represents
 set shiftwidth=4     " Number of spaces to use for auto-indentation
