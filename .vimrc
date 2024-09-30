@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'pulkomandy/c.vim'
+Plug 'tpope/vim-commentary'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'joshdick/onedark.vim'
 Plug 'preservim/nerdtree'
